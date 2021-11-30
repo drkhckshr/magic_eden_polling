@@ -10,7 +10,7 @@
 Clone this repo
 
 ```
-git clone ....
+git clone https://github.com/drkhckshr/magic_eden_polling.git
 ```
 
 Build the Docker image
