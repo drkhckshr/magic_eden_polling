@@ -1,1 +1,5 @@
-[{"title": "SKULL #3342", "price": 1.44, "img": "https://www.arweave.net/7DwU5xxzEYpSg3KmsM6eC_wit1kgbqnwA-rJIrsXnHI?ext=png", "url": "https://api-mainnet.magiceden.io/rpc/getNFTByMintAddress/7rQh2fydVyvj73U9NmerHoRYcdSRt2MguCNsFHKG8xfg"}, {"title": "SKULL #4746", "price": 2.5, "img": "https://www.arweave.net/KJcvU8GQnM4EGYee6nnYwRCHyT6GOqdgmA34GTnagFs?ext=png", "url": "https://api-mainnet.magiceden.io/rpc/getNFTByMintAddress/J6sFSLsUDQVpi2gqyXo6dqx9qKUbzH82zhu3wHVZxMU7"}]
+[
+    {
+        "url": "https://api-mainnet.magiceden.io/rpc/getNFTByMintAddress/2t2EAthJUJtTTvbDk9r72evvmGspQ9C1gmedKUCnjVNN"
+    }
+]
