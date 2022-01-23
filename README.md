@@ -33,7 +33,7 @@ docker run --rm  -v `pwd`:/tmp -it mepoll python tmp/src/get_me_nft_collections.
 
 To modify what NFT collections to target update the `me_nft_collections.json` file in `mepoll/files`.
 
-The only requirement is to begin is to have the `.json` in the following format.
+The only requirement is to have the `.json` in the following format.
 
 ```
 [
