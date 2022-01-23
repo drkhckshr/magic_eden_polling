@@ -1,5 +1,9 @@
 # Magic Eden Polling
 
+## Purpose
+
+This is just a demonstration using some of the undocumented ReST API's Magic Eden exposes. The code provided will look for the most recently listed items in any NFT collection on Magic Eden. You can use the API's or the data to build other intesting use cases like tracking average listed price over time for example. Hope you find this project useful!
+
 ## Requirements
 
 * Docker
@@ -57,6 +61,8 @@ https://www.magiceden.io/marketplace/skeleton_crew_skulls
 In `mepoll/files` you see additional `.json` files with the most recently listed NFTs in each collection.
 
 Each `.json` collection file will follow the naming convention of `me_nft_<collection_name>.json`.
+
+NOTE: Each time the container is run it will overwrite any collection files that were previously generated.
 
 ## Support
 
