@@ -5,6 +5,8 @@
 * Docker
   * [Get Docker Desktop](https://www.docker.com/products/docker-desktop)
 
+The `Dockerfile` will take care of the rest of the dependencies.
+
 ## Quick Start
 
 Clone this repo
@@ -24,29 +26,47 @@ Run the container
 
 ```
 cd mepoll
-docker run --rm  -v `pwd`:/tmp -it mepoll python tmp/src/get_me_nfts.py
+docker run --rm  -v `pwd`:/tmp -it mepoll python tmp/src/get_me_nft_collections.py
 ```
 
-To modify what NFTs to target update the `me_nfts.json` file.
+## Usage
+
+To modify what NFT collections to target update the `me_nft_collections.json` file in `mepoll/files`.
 
 The only requirement is to begin is to have the `.json` in the following format.
 
 ```
 [
-    {"url": "https://api-mainnet.magiceden.io/rpc/getNFTByMintAddress/<mint_address_for_the_nft>"}
+    {
+        "collectionName": "skeleton_crew_skulls"
+    },
+    {
+        "collectionName": "skeleton_crew_airdrops_and_more"
+    }
 ]
 ```
 
-To poll multiple NFTs add more to the array/list like so
+You can find the collection name in your browser's address bar. 
+
+For example, the `Skeleton Crew Skulls` collection is at
 
 ```
-[
-    {"url": "https://api-mainnet.magiceden.io/rpc/getNFTByMintAddress/<mint_address_for_the_nft>"},
-    {"url": "https://api-mainnet.magiceden.io/rpc/getNFTByMintAddress/<mint_address_for_another_nft>"}
-]
+https://www.magiceden.io/marketplace/skeleton_crew_skulls
 ```
 
-The mint address is easy to find. Just select the NFT from Magic Eden and look at the URL in your browser. It will be the random character portion of the URL after `item-details`. 
-```
-https://magiceden.io/item-details/2t2EAthJUJtTTvbDk9r72evvmGspQ9C1gmedKUCnjVNN
-```
+In `mepoll/files` you see additional `.json` files with the most recently listed NFTs in each collection.
+
+Each `.json` collection file will follow the naming convention of `me_nft_<collection_name>.json`.
+
+## Support
+
+Please open an issue in this repository if you are having trouble or need assistance.
+
+## Contributions
+
+Pull requests are welcomed and encouraged! 
+
+If you find this repository useful and would rather contribute defi-nancially tips are appreciated.
+
+You can send $SOL to `drkhckshr.sol` in a [Phantom wallet](https://phantom.app/) or to the following wallet address:
+* `JD8dLRk7YHBaekkGftdKUbQB1hc3jLwJ87e8zJUiqR6s`

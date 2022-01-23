@@ -41,7 +41,7 @@ def main():
         data, collection = create_data(result_data)
 
         for item in data:
-            print(item['title'], item['price'], "https://magiceden.io/item-details/{mintAddress}".format(mintAddress=item['mintAddress']))
+            print(collection, item['price'], item['title'], "https://magiceden.io/item-details/{mintAddress}".format(mintAddress=item['mintAddress']))
 
         json_file = "/tmp/files/me_nfts_{collection}_recents.json".format(collection = collection)
         with open(json_file, 'w') as w_jf:
